@@ -12,7 +12,7 @@ export PATH="$HOME/.elan/bin:$PATH"
 cd "$(dirname "$0")" || exit 1
 NS="SteinerLehmus"
 LIB="SteinerLehmus"
-REQUIRED="SteinerLehmus.steiner_lehmus SteinerLehmus.bisector_foot_sq SteinerLehmus.algebraic_core"
+REQUIRED="SteinerLehmus.steiner_lehmus SteinerLehmus.bisector_foot_sq SteinerLehmus.algebraic_core SteinerLehmus.l14_steiner_lehmus SteinerLehmus.l14b_norm_eq SteinerLehmus.l14b_not_collinear SteinerLehmus.l14b_angle_eq SteinerLehmus.l14w_steiner_lehmus SteinerLehmus.Classical.cov_D7 SteinerLehmus.Classical.cov_D7_obligation"
 SOURCES="SteinerLehmus/*.lean SteinerLehmus.lean"
 [ -e .lake/packages/mathlib ] || { echo "FAIL: Mathlib packages missing (run setup by hand)"; exit 1; }
 if [ "${SCAFFOLD:-0}" != "1" ]; then
